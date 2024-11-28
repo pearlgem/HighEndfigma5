@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    
+}
+
+@font-face {
+    font-family: pop;
+    src: url(./Poppins-Regular.ttf);
+}
+
+body {
+background-color: rgba(0,0,0,0.4);
+position: relative;
+
+}
+
+.background-clip {
+    position: absolute;
+    right: -208px;
+    top: 0;
+    left: -1px;
+    height: 116%;
+    z-index: -1;
+}
+
+
+.meda-content {
+    font-size: 62.5%;
+   
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  
+    font-family: pop;
+   
+}
+
+.my-main {
+    height: 100vh;
+    width: 90vw;
+ }
+    
+#specs {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    bottom: 350px;
+    opacity: 50%;
+
+
+
+}
+
+#speed {
+    position: absolute;
+    right: 294px;
+    top: 350px;
+    width: fit-content;
+    opacity: 50%;
+
+}
+
+
+
+
+
+#navi {
+   
+    margin-top: 1rem;
+    display: flex;
+     gap: 30px;
+     list-style: none;
+     font-size: 1.2rem;
+     cursor: pointer;
+    
+     
+}
+
+#navi > li:hover {
+    transition-duration: 0.2s;
+    rotate: 1080deg;
+    color: rgb(255, 0, 0);
+    filter: drop-shadow(1px 1px 10px rgba(255, 0, 212, 0.836));
+    
+}
+
+
+.sections {
+    height: 100%;
+    width: 120%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.left-section {
+    height: 30%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin-right: 320px;
+    justify-content: center;
+}
+
+
+
+
+.left-section > .container1 > .button {
+    padding: .6rem 1.8rem;
+    font-size: 1.5rem;
+    background: linear-gradient(#ffffff33, #f0f0f021);
+    color: rgb(0, 0, 0);
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    bottom: 100px;
+    width: 200px;
+    border: .1rem black solid;
+    
+}
+
+.left-section > .container1 {
+    height: 90%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+.heading {
+  color: rgb(206, 206, 206);
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+
+.mobi {
+    background-color: transparent;
+    color: transparent;
+    height: 200px;
+    width: 200px;
+    font-size: 3rem;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: none;
+    }
+
+@media only screen and (max-width: 600px) {
+   
+   .meda-content {
+    font-size: 45%;
+    position: relative;
+   }
+   
+    .navibar {
+    height: 7rem;
+    width: 100%;
+    position: fixed;
+     }
+   #navi {
+   display: none;
+ 
+   }
+   #btnsignin {
+    display: none;
+   }
+
+   #arrow1, #arrow2 {
+    display: none;
+   }
+
+   .left-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+ .meda-content {
+    
+    background-position: center center;
+    background-size: 100% 100%;
+       }
+
+ .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    font-size: 4rem;
+    line-height: 70px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: -148px;
+    left: -28px;
+    text-align: center;
+    white-space: pre-line;
+
+    
+   }
+
+.left-section > .container1 > .button {
+
+
+display: none;
+
+}
+.background-clip {
+    position: absolute;
+    right: -447px;
+    top: 0;
+    left: -385px;
+    height: 100%;
+    z-index: -1;
+}
+
+}
+   
+
+
+
+.mobi {
+    background: linear-gradient(to bottom, rgba(175, 175, 175, 0.986)10%, rgb(0, 0, 0)40%, rgb(0, 0, 0)90%);
+    background-clip: text;
+    color: transparent;
+    height: 30%;
+    width: 100%;
+    font-size: 5rem;
+    position: absolute;
+    bottom: -100px;
+    left: -42px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1px;
+    margin-left: 40px;
+    text-align: center;
+}
+
+#specs { 
+    display: none;
+}
+
+#speed {
+    position: absolute;
+    right: 110px;
+    height: 10%;
+    top: 4px;
+    width: fit-content;
+    opacity: 50%;
+}
+
+
+
+
+
+
+
